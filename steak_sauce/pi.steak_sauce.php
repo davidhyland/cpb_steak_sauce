@@ -62,7 +62,8 @@ class Steak_sauce {
 			if ($tag_data < 1 || $tag_data >26) {
 				$this->return_data = '';
 			} else {
-				$this->return_data = $int_to_let[$tag_data];
+				$uppercase = ($this->EE->TMPL->fetch_param('uppercase')=='yes') ? true : false;
+				$this->return_data = ($uppercase) ? strtoupper($int_to_let[$tag_data]) : $int_to_let[$tag_data];
 			}
 
 		} else {
