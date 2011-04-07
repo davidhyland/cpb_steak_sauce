@@ -110,6 +110,8 @@ class Steak_sauce {
 
 		{exp:steak_sauce}a{/exp:steak_sauce} returns "1"
 		{exp:steak_sauce}1{/exp:steak_sauce} returns "a"
+		{exp:steak_sauce uppercase='yes'}1{/exp:steak_sauce} returns "A"
+
 
 	### Example Usage
 
